@@ -78,7 +78,6 @@ touch %{coreutils_present}
 
 %files
 %defattr(-,root,root)
-%{_sysconfdir}/profile.d/serial-console.sh
 %{_libexecdir}/*
 %{_bindir}/*
 %{_sbindir}/*
