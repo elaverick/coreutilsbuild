@@ -8,8 +8,6 @@ Group:          System Environment/Base
 Vendor:         VMware, Inc.
 Distribution:   Photon
 
-Source0: http://ftp.gnu.org/gnu/coreutils/%{name}-%{version}.tar.xz
-
 # Patches are taken from:
 # www.linuxfromscratch.org/patches/downloads/coreutils/
 Patch0: coreutils-i18n.patch
@@ -31,7 +29,7 @@ Requires:   %{name} = %{version}-%{release}
 These are the additional language files of coreutils.
 
 %prep
-%autosetup -p1
+%autosetup -D -T -p1
 
 %build
 autoreconf -fiv
